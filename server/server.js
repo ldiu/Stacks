@@ -11,7 +11,8 @@ app.use(express.json());
 app.use(require("./routes/transaction"));
 const dbo = require("./db/conn");
 
-
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'client/build')))
 
 app.listen(port, () => {
   // perform a database connection when server starts
