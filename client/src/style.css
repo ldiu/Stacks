@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+
+#navbarLogo {
+    grid-column: 1 / 2;
+    font-weight: 500;
+    font-size: 40pt;
+    border: 2px solid rgb(106, 141, 146);
+}
+
+#logo {
+    font-weight: 500;
+    font-size: 50pt;
+    color: rgb(106, 141, 146);
+    border-radius: 8pt;
+    padding: 3pt;
+    position: relative;
+    left: 2vw;
+    max-width: fit-content;
+}
+
+#loginButton {
+    font-size: 150%;
+    background-color: rgb(106, 141, 146);
+    color: rgb(247, 243, 227);
+    border-radius: 5pt;
+    grid-column: 4 / 5;
+    /* width: 100pt; */
+    /* height: 35pt; */
+    margin-top: 28pt;
+    text-align: center;
+    max-width: 80pt;
+    max-height: 25pt;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit
+}
+
+.navbar {
+    background-color: rgb(247, 243, 227);
+    border-radius: 7pt;
+    height: 100px;
+    border-style: solid;
+}
+
+
+#addTransactionButton {
+    position: fixed;
+    background-color: rgb(247, 243, 227);
+    border: none;
+    color: rgb(106, 141, 146);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35pt;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    min-width: 45pt;
+    bottom: 2%;
+    right: 4%;
+}
+
+
+#main {
+    background-color: rgb(106, 141, 146);
+    color: rgb(247, 243, 227);
+    border-radius: 7pt;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Ubuntu';
+    height: fit-content;
+    min-height: 90vh;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100px;
+
+}
+
+#mainDisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 40px;
+    align-items: center;
+    justify-items: center;
+    height: 90vh;
+    margin-top: 5px;
+}
+
+#MDTitle {
+    font-size: 6vw;
+    margin-top: 1vh;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    text-align: left;
+}
+
+#MDRatio {
+
+    font-size: 2vw;
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+
+#MDComment {
+    font-size: 7vw;
+    grid-column: 1 / 5;
+    grid-row: 5 / 6;
+}
+
+#viewAll {
+    background-color: rgb(247, 243, 227);
+    color: rgb(106, 141, 146);
+    grid-column: 2 / 4;
+    grid-row: 6 / 7;
+    padding: 6px;
+    text-align: center;
+    border-radius: 7pt;
+    border: none;
+    width: fit-content;
+}
+
+tr {
+    height: fit-content;
+    width: fit-content;
+}
+
+tr:hover {
+    background-color: rgba(45, 49, 66, .5);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(247, 243, 227);
+    color: rgb(106, 141, 146);
+}
+
+tr:nth-child(even):hover {
+    background-color: rgba(45, 49, 66, .5);
+}
+
+th {
+    background-color: rgba(45, 49, 66, .5);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color:orang;
+    color: rgb(247, 243, 227);
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+}
+
+.header {
+    font-size: 4vw;
+    padding-top: 15px;
+
+}
+
+#transactionListWindow {
+    background-color: rgb(106, 141, 146);
+    color: rgb(247, 243, 227);
+    border-radius: 7pt;
+}
+
+#registerButton{
+    margin-top: 45px;
+}
+
+#editButton {
+    background-color: transparent;
+    border: none;
+}
+
+#deleteButton {
+    background-color: transparent;
+    border: none;
+}
+
+#deleteBtn {
+    padding: 5px;
+}
+
+#register {
+    height: 30%;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#login {
+    display: block;
+    text-align: center;
+    min-height: 30%;
+}
+
+form {
+    background-color: rgb(247, 243, 227);
+    width: 500px;
+    height: fit-content;
+    border-radius: 7pt;
+    padding: 1%;
+    min-height: 100%;
+    justify-content: center;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+.formLabel {
+    float: left;
+    min-width: 25%;
+    color: rgb(106, 141, 146);
+    background-color: rgb(247, 243, 227);
+    margin: 3px;
+    padding: 3px;
+}
+
+.formInput {
+    background-color: white;
+    width: 200px;
+    border-radius: 3pt;
+    float: left;
+    padding: 5pt;
+    margin: 3px;
+
+}
+
+.formItems {
+    content: "";
+    display: table;
+    clear: both;
+    width: 500px;
+    float: center;
+}
+
+#notes {
+    height: 150px;
+    width: 217px;
+    box-sizing: border-box;
+    font-size: 16px;
+
+    padding: 5pt;
+    background-color: white;
+
+    border-radius: 3pt;
+    float: left;
+    margin: 3px;
+}
+
+.formButton {
+    background-color: rgb(106, 141, 146);
+    color: rgb(247, 243, 227);
+    font-size: 20pt;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+
+.barOutline {
+    height: 100%;
+    width: 95%;
+    background-color: rgb(247, 243, 227);
+    border-radius: 50;
+    margin: 50;
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+    border-radius: 10pt;
+}
+.barFill{
+    height: 100%;
+    border-top-left-radius: 10pt;
+    border-bottom-left-radius: 10pt;
+    text-align: center;
+}
+
+#progressRatio{
+    font-size: 7vw;
+    margin:auto;
+    text-align: center;
+}
+
+#blankProgressDiv{
+    min-height: 20%;
+}
+
+@media only screen and (max-width: 780px) {
+
+    #main {
+        display: block;
+        min-height: 80vh;
+        margin-top: .5vh;
+        height: fit-content;
+        align-items: center;
+        justify-items: center;
+        height: 88vh;
+        margin-top: 5px;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        gap: 5vw;
+
+    }
+
+
+    #loginButton {
+        background-color: rgb(106, 141, 146);
+        color: rgb(247, 243, 227);
+        border-radius: 5pt;
+        padding: 3pt;
+        /* min-width: 20vw;
+        min-height: 10vw; */
+        width: fit-content;
+        margin-top: 3.4vh;
+    }
+
+    #mainDisplay {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 120px 1fr 150px 50px;
+        height: fit-content;
+        min-height: 80vh;
+        height: 88vh;
+    }
+
+    #logo {
+        font-size: 350%;
+        left: 0vw;
+        margin-top: 1vh;
+    }
+
+    #navbarLogo {
+        margin-top: 10vw;
+    }
+
+    #MDComment {
+        font-size: 10vw;
+    }
+
+    #loginButton {
+        font-size: 120%;
+        position: static;
+        min-height: 20px;
+        max-height: 25px;
+        min-width: 80px;
+        max-width: 100px;
+        text-align: center;
+
+    }
+
+    #MDTitle {
+        font-size: 4vh;
+        margin-top: 1vh;
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        text-align: center;
+    }
+
+    #MDRatio {
+        margin-top: 2vh;
+        font-size: 5vw;
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+
+    }
+
+    #viewAll {
+        grid-column: 2 / 4;
+        grid-row: 4 / 5;
+    }
+
+    #MDComment {
+        font-size: 10vw;
+        grid-column: 1 / 5;
+        grid-row: 3 / 4;
+    }
+
+    .barOutline {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+        width: 100%;
+        max-width: 500px;
+        height: 80%;
+        max-height: 250px;
+        transform: rotate(270deg);
+        border-radius: 10pt;
+    }
+
+    .barFill{
+        min-height: 100%;
+        float: left;
+        border-top-left-radius: 10pt;
+        border-bottom-left-radius: 10pt;
+    }
+
+    #progressRatio{
+        font-size: 9vw;
+        transform: rotate(90deg);
+        margin:auto;
+        margin-top: 10%;
+        position: fixed;
+
+    }
+
+    table {
+        width: 100%;
+        max-width: 100%;
+        table-layout: fixed;
+        font-size: 3vw;
+    }
+
+    th {
+        font-size: 2.3vw;
+    }
+
+    .actionImage {
+        width: 25px;
+        height: 25px;
+    }
+
+    #register {
+        height: 30%;
+    }
+
+    #login {
+        height: 22%;
+    }
+
+    #update {
+        height: 50%;
+    }
+
+    form {
+        margin-top: 10px;
+        background-color: rgb(247, 243, 227);
+        width: 90%;
+        height: fit-content;
+        margin-left: 4%;
+        border-radius: 7pt;
+        padding: 1%;
+        min-height: 100%;
+
+    }
+
+    .header {
+        font-size: 10vw;
+    }
+
+    .formLabel {
+        float: left;
+        min-width: 33%;
+        color: rgb(106, 141, 146);
+        background-color: rgb(247, 243, 227);
+        margin: 3px;
+        padding: 5px;
+        font-size: 15pt;
+
+    }
+
+    .formInput {
+        background-color: white;
+        width: 40%;
+        border-radius: 3pt;
+        float: right;
+        padding: 6pt;
+        margin: 2px;
+        font-size: 12pt;
+    }
+
+    .formItems {
+        content: "";
+        display: table;
+        clear: both;
+        width: 90%;
+        float: center;
+    }
+
+    #notes {
+        height: 150px;
+        width: 47%;
+        box-sizing: border-box;
+        font-size: 12px;
+        padding: 5pt;
+        background-color: white;
+        border-radius: 3pt;
+        float: right;
+        margin: 3px;
+    }
+
+    .formButton {
+        background-color: rgb(106, 141, 146);
+        color: rgb(247, 243, 227);
+        font-size: 20pt;
+        border-radius: 7px;
+        margin-top: 15px;
+    }
+}
