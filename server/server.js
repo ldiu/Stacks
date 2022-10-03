@@ -1,5 +1,4 @@
 const express = require("express");
-// const session = require("express-session");
 const mongoose = require('mongoose');
 const fs = require("fs");
 const app = express();
@@ -15,7 +14,6 @@ const path = require('path');
 app.use(express.static(path.join(__dirname, 'client/build')))
 
 app.listen(port, () => {
-  // perform a database connection when server starts
   dbo.connectToServer(function (err) {
     if (err) console.error(err);
  
